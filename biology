@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>me</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<i class="fas fa-archway"></i>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family: "Lato", sans-serif}
+.mySlides {display: none}
+</style>
+<audio src="https://www.youtube.com/watch?v=xcdJNdW0H1A"></audio>
+<body>
+
+<!-- Navbar -->
+
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+    <a href="#bio" class="w3-bar-item w3-button w3-padding-large w3-hide-small">BIOGRAPHY</a>
+    <a href="#hob" class="w3-bar-item w3-button w3-padding-large w3-hide-small">MORE</a>
+    </div>
+    <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
+  </div>
+</div>
+
+<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+  <a href="#band" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">BAND</a>
+  <a href="#tour" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">TOUR</a>
+</div>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:2000px;margin-top:46px">
+
+  <!-- Automatic Slideshow Images -->
+  <div class="mySlides w3-display-container w3-center">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/FloorGoban.JPG" style="width:100%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h3>Go</h3>
+      <p><b>The old board game</b></p>   
+    </div>
+  </div>
+  <div class="mySlides w3-display-container w3-center">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/f/f9/Badminton-1428046.jpg" style="width:100%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h3>Badminton</h3>
+      <p><b>The fast ball sport</b></p>    
+    </div>
+  </div>
+  <div class="mySlides w3-display-container w3-center">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Gutenberg_Bible%2C_Lenox_Copy%2C_New_York_Public_Library%2C_2009._Pic_01.jpg/447px-Gutenberg_Bible%2C_Lenox_Copy%2C_New_York_Public_Library%2C_2009._Pic_01.jpg" style="width:100%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h3>Book</h3>
+      <p><b>Knowledge</b></p>    
+    </div>
+  </div>
+
+      <p>Date/Time: <span id="datetime"></span></p>
+      <script>
+      window.onload = function() { setInterval( timeNow, 1000); }
+      var dt = new Date();
+      document.getElementById("datetime").innerHTML = (("0"+(dt.getMonth()+1)).slice(-2))  +"-"+ (("0"+dt.getDate()).slice(-2)) +"-"+ (dt.getFullYear()) +" "+ (("0"+dt.getHours()).slice(-2)) +":"+ (("0"+dt.getMinutes()).slice(-2)) +":"+(("0"+dt.getSeconds()).slice(-2));
+          function timeNow() {
+            var dt = new Date();
+          document.getElementById("datetime").innerHTML = (("0"+(dt.getMonth()+1)).slice(-2))  +"-"+ (("0"+dt.getDate()).slice(-2)) +"-"+ (dt.getFullYear()) +" "+ (("0"+dt.getHours()).slice(-2)) +":"+ (("0"+dt.getMinutes()).slice(-2)) +":"+(("0"+dt.getSeconds()).slice(-2));
+          }
+          
+          </script>
+  <!-- The bio Section -->
+  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="bio">
+    <h2 class="w3-wide">BIOGRAPHY</h2>
+    <p class="w3-opacity"><i>Life is a box of chocolate</i></p>
+    <p class="w3-justify">My name is Shih Wen-Wei and I'm from Tainan. Born in sa middle-class family, my parents give me a good environment to study the senior high school I studied in is
+    <a href ="https://www.tnfsh.tn.edu.tw/" style ="color:red">Tainan First Senior High School</a>
+    .And now I am a freshman in 
+    <a href ="https://web.ee.ntu.edu.tw/" style ="color:red">National Taiwan University Department of Eletrical Engineering</a>
+    , the department I major in. Different from my life before, in college, I become more free. I have much leisure time to join clubs, I can determine which course to take, and I can get acquaintance with people from variant countries. Although annoying by so much homework and midterm exams recently, I still think that the college life is appealing.</p>
+    <img src ="https://scontent-tpe1-1.xx.fbcdn.net/v/t1.6435-9/183963260_2899905943600007_7237962728922241370_n.jpg?_nc_cat=100&ccb=1-3&_nc_sid=8bfeb9&_nc_ohc=pA4bHcQgFHsAX8z0eFk&_nc_ht=scontent-tpe1-1.xx&oh=062e929fab2d9eeadda682d7d55a3c54&oe=60BCF841" width="60%">
+  </div>
+
+  <!-- The hob Section -->
+  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="hob">
+    <h2 class="w3-wide">More About Me</h2>
+    <font size="5"><p class="w3-justify">HOBBIES</p></font>
+    <font size="4"><p class="w3-justify">1. play <a href ="https://zh.wikipedia.org/wiki/%E5%9B%B4%E6%A3%8B"><font color ="red">Go</font></a></p>
+    <p class="w3-justify">2. play <a href ="https://bwfbadminton.com/"><font color ="red">badminton</font></a></p>
+    <p class="w3-justify">3. <a href ="https://www.ncl.edu.tw/"><font color ="red">Reading</font></a></p></font>
+  
+  <font size="5"><p class="w3-justify">MAIL</p></font>
+  <font size="4"><p class="w3-justify">b09901152@ntu.edu.tw</p></font>
+  </div>
+
+  
+<script>
+// Automatic Slideshow - change image every 4 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 4000);    
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+
+</script>
+
+</body>
+</html>
